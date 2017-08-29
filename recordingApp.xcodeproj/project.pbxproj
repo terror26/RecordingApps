@@ -13,6 +13,8 @@
 		291D86C21F4E9CD50088FDB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291D86C11F4E9CD50088FDB5 /* Assets.xcassets */; };
 		291D86C51F4E9CD50088FDB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291D86C31F4E9CD50088FDB5 /* LaunchScreen.storyboard */; };
 		291D86D01F4E9CD50088FDB5 /* recordingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D86CF1F4E9CD50088FDB5 /* recordingAppTests.swift */; };
+		291D86FF1F4EA1480088FDB5 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D86FE1F4EA1480088FDB5 /* CircleButton.swift */; };
+		29DBCAD81F55D5F700B96966 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 29DBCAD71F55D5F700B96966 /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		291D86CB1F4E9CD50088FDB5 /* recordingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recordingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		291D86CF1F4E9CD50088FDB5 /* recordingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recordingAppTests.swift; sourceTree = "<group>"; };
 		291D86D11F4E9CD50088FDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		291D86FE1F4EA1480088FDB5 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		29DBCAD71F55D5F700B96966 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +81,13 @@
 		291D86B91F4E9CD40088FDB5 /* recordingApp */ = {
 			isa = PBXGroup;
 			children = (
+				291D86DC1F4EA0180088FDB5 /* Model */,
+				291D86DB1F4EA0100088FDB5 /* View */,
+				291D86DA1F4E9FFF0088FDB5 /* Controller */,
 				291D86BA1F4E9CD40088FDB5 /* AppDelegate.swift */,
-				291D86BC1F4E9CD40088FDB5 /* ViewController.swift */,
 				291D86BE1F4E9CD40088FDB5 /* Main.storyboard */,
 				291D86C11F4E9CD50088FDB5 /* Assets.xcassets */,
+				29DBCAD71F55D5F700B96966 /* test.m4a */,
 				291D86C31F4E9CD50088FDB5 /* LaunchScreen.storyboard */,
 				291D86C61F4E9CD50088FDB5 /* Info.plist */,
 			);
@@ -94,6 +101,29 @@
 				291D86D11F4E9CD50088FDB5 /* Info.plist */,
 			);
 			path = recordingAppTests;
+			sourceTree = "<group>";
+		};
+		291D86DA1F4E9FFF0088FDB5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				291D86BC1F4E9CD40088FDB5 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		291D86DB1F4EA0100088FDB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				291D86FE1F4EA1480088FDB5 /* CircleButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		291D86DC1F4EA0180088FDB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29DBCAD81F55D5F700B96966 /* test.m4a in Resources */,
 				291D86C51F4E9CD50088FDB5 /* LaunchScreen.storyboard in Resources */,
 				291D86C21F4E9CD50088FDB5 /* Assets.xcassets in Resources */,
 				291D86C01F4E9CD40088FDB5 /* Main.storyboard in Resources */,
@@ -199,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291D86FF1F4EA1480088FDB5 /* CircleButton.swift in Sources */,
 				291D86BD1F4E9CD40088FDB5 /* ViewController.swift in Sources */,
 				291D86BB1F4E9CD40088FDB5 /* AppDelegate.swift in Sources */,
 			);
@@ -408,6 +440,7 @@
 				291D86D61F4E9CD50088FDB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		291D86D71F4E9CD50088FDB5 /* Build configuration list for PBXNativeTarget "recordingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +449,7 @@
 				291D86D91F4E9CD50088FDB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
